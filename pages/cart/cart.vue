@@ -1,6 +1,6 @@
 <template>
 	<view>
-		我是消息页面
+		购物车
 	</view>
 </template>
 
