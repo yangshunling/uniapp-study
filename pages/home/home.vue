@@ -3,7 +3,7 @@
 		<!-- 轮播图 -->
 		<swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :circular="true" :interval="interval"
 		 :duration="duration">
-			<swiper-item v-for="item in swiperArr" :key="item.id" style="width: 750rpx;height: 380rpx">
+			<swiper-item v-for="(item,index) in swiperArr" :key="index" style="width: 750rpx;height: 380rpx" @click="preview(index)">
 				<image :src="item" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
 			</swiper-item>
 		</swiper>
@@ -114,6 +114,13 @@
 						animationDuration: 200
 					});
 				}
+			},
+			preview(index) {
+				uni.previewImage({
+					current: index,
+					urls: this.swiperArr,
+					indicator:"default"
+				});
 			}
 		}
 	}
