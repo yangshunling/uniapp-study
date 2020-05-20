@@ -1,0 +1,66 @@
+<template>
+	<view>
+		<image class="img" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=248222817,375547763&fm=26&gp=0.jpg"></image>
+		<view class="address">
+			<text class="phone" @click="phone()">联系电话：400-618-9090（点击拨打）</text>
+			<text class="addre">地址：浙江省杭州市滨江区恒生大厦</text>
+			<map class="map" :latitude="latitude" :longitude="longitude" :markers="covers" :scale="scale"></map>
+		</view>
+
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				latitude: 30.191606,
+				longitude: 120.172273,
+				scale: 13,
+				covers: [{
+					title: "宝龙城",
+					latitude: 30.191606,
+					longitude: 120.172273,
+					width: 25,
+					height: 25,
+					iconPath: "../../static/marker.png"
+				}]
+			}
+		},
+		methods: {
+			phone() {
+				uni.makePhoneCall({
+					phoneNumber: '18058810112'
+				});
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+	.img {
+		width: 750rpx;
+		height: 350rpx;
+	}
+
+	.address {
+		width: 750rpx;
+		padding: 20rpx;
+		flex-direction: column;
+	}
+
+	.phone {
+		font-size: 15px;
+	}
+
+	.addre {
+		font-size: 15px;
+		padding-top: 15px;
+		padding-bottom: 30rpx;
+	}
+
+	.map {
+		width: 710rpx;
+		height: 500rpx;
+	}
+</style>

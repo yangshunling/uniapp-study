@@ -3,7 +3,7 @@
 		{
 			"path": "pages/home/home",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "首页"
 			}
 		}, {
 			"path": "pages/cart/cart",
@@ -21,15 +21,36 @@
 				"navigationBarTitleText": "资讯"
 			}
 		}, {
-			"path": "pages/home/home",
+			"path": "pages/chaoshi/chaoshi",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "购物超市",
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":"5"
+			}
+		}, {
+			"path": "pages/lianxi/lianxi",
+			"style": {
+				"navigationBarTitleText": "联系我们"
+			}
+		}, {
+			"path": "pages/shequ/shequ",
+			"style": {
+				"navigationBarTitleText": "社区图片"
+			}
+		}, {
+			"path": "pages/xuexi/xuexi",
+			"style": {
+				"navigationBarTitleText": "学习视频"
 			}
 		}
-	],
+	    ,{
+            "path" : "components/gridview/gridview",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "商城应用",
+		"navigationBarTitleText": "应用商城",
 		"navigationBarBackgroundColor": "#b50e03",
 		"backgroundColor": "#F8F8F8"
 	},
