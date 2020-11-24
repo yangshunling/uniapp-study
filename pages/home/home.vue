@@ -7,6 +7,8 @@
 				<image :src="item" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
 			</swiper-item>
 		</swiper>
+		<uni-notice-bar speed="60" color="#ff0000" showIcon="true" scrollable="true" single="true" text="[单行] 这是 NoticeBar 通告栏，这是 NoticeBar 通告栏，这是 NoticeBar 通告栏"
+		 @click="openNotice()"></uni-notice-bar>
 		<!-- 导航栏 -->
 		<view class="nav">
 			<view class="nav_item" @click="navPush(1)">
@@ -119,7 +121,15 @@
 				uni.previewImage({
 					current: index,
 					urls: this.swiperArr,
-					indicator:"default"
+					indicator: "default"
+				});
+			},
+			openNotice() {
+				uni.showToast({
+					title: '我就是一个标题',
+					duration: 2000,
+					icon: "none",
+					position: "bottom"
 				});
 			}
 		}

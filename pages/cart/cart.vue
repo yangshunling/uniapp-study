@@ -1,6 +1,6 @@
 <template>
 	<view>
-		购物车
+		<web-view :webview-styles="webviewStyles" src="https://blog.csdn.net/u014752325/article/details/107605689"></web-view>
 	</view>
 </template>
 
@@ -8,11 +8,15 @@
 	export default {
 		data() {
 			return {
-				
+				webviewStyles: {
+					progress: {
+						color: '#FF3333'
+					}
+				}
 			}
 		},
 		methods: {
-			
+
 		}
 	}
 </script>
