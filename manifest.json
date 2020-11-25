@@ -1,9 +1,9 @@
 {
-    "name" : "uniapp学习",
+    "name" : "uniapp-study",
     "appid" : "__UNI__CED0F9D",
     "description" : "uniapp学习测试",
     "versionName" : "1.0.1",
-    "versionCode" : 1,
+    "versionCode" : 100,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {

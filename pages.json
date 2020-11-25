@@ -25,7 +25,7 @@
 			"style": {
 				"navigationBarTitleText": "购物超市",
 				"enablePullDownRefresh":true,
-				"onReachBottomDistance":"5"
+				"onReachBottomDistance":5
 			}
 		}, {
 			"path": "pages/lianxi/lianxi",
@@ -43,10 +43,6 @@
 				"navigationBarTitleText": "学习视频"
 			}
 		}
-	    ,{
-            "path" : "components/gridview/gridview",
-            "style" : {}
-        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",

@@ -1,6 +1,6 @@
 <template>
 	<view>
-		会员
+		<button type="default" @click="start()">跳转到原生</button>
 	</view>
 </template>
 
@@ -8,11 +8,13 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		methods: {
-			
+			start() {
+				uni.sendNativeEvent("event", null)
+			}
 		}
 	}
 </script>
